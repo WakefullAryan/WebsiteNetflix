@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from "styled-components"
+
+const StyledPage = styled.div`
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+`
+
+const StyledTest = styled.p`
+  margin-top: 1000px;
+  color: white;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledPage>
+      <p>test</p>
+      <StyledTest>hi</StyledTest>
+    </StyledPage>
   );
 }
 
